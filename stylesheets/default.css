@@ -1,0 +1,54 @@
+body{
+    background-color:#F2EFDF
+}
+
+.navbutton{border:4px solid #F2EFDF;
+   height:100px
+    width:200px
+    display:block-inline;
+    color:#F2EFDF;
+    text-decoration:none;
+    padding:10px;
+    font-family:Arial;
+    margin:5px
+}
+
+a.navbutton:hover{
+    color:#F55257;
+    border:4px solid #F55257;
+}
+
+#top{
+    width:100%;
+    height:50px;
+    background-color:#35203D;
+    padding:40px 50px 10px 50px;
+    float:left;
+}
+
+.textbox{
+    background-color:#413659;
+    color:#F2EFDF;
+    padding:10px;
+    font-family:Arial;
+}
+
+#right{
+    width:60%;
+    height:400px;
+    margin:20px 10px 10px 5px;
+    float:right;
+}
+
+#left{
+    width:25%;
+    height:300px;
+    margin:20px 5px 10px 10px;
+    float:left;
+}
+
+#mypic{
+    width:90%;
+    margin:4%;
+    border: 1px solid #35203D;
+}
