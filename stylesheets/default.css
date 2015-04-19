@@ -46,6 +46,12 @@ a.navbutton:hover{
     margin:20px 10px 10px 5px;
     float:right;
 }
+#blogrightlong{
+    width:60%;
+    height:1550px;
+    margin:20px 10px 10px 5px;
+    float:right;
+}
 
 #left{
     width:25%;
@@ -63,4 +69,24 @@ a.navbutton:hover{
 #catpic{
     height:70%;
     border: 1px solid #35203D;
+}
+
+
+#blogtext{
+    width:90%;
+    margin-left:4%;
+    margin-right:4%;
+    margin-top:10px;
+}
+#blogtextleft{
+    width:49%;
+    float:left;
+}
+#blogtextright{
+    width:49%;
+    float:right;
+}
+p > a{
+    color:#F2EFDF;
+    text-decoration:none;
 }
