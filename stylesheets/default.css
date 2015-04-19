@@ -40,6 +40,13 @@ a.navbutton:hover{
     float:right;
 }
 
+#blogright{
+    width:60%;
+    height:700px;
+    margin:20px 10px 10px 5px;
+    float:right;
+}
+
 #left{
     width:25%;
     height:400px;
