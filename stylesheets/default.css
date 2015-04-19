@@ -59,3 +59,8 @@ a.navbutton:hover{
     margin:4%;
     border: 1px solid #35203D;
 }
+
+#catpic{
+    height:70%;
+    border: 1px solid #35203D;
+}
