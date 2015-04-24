@@ -24,6 +24,7 @@ a.navbutton:hover{
     background-color:#35203D;
     padding:40px 50px 10px 50px;
     margin: -10px -10px 0px -10px;
+    position:fixed;
 }
 
 .textbox{
@@ -36,27 +37,27 @@ a.navbutton:hover{
 #right{
     width:60%;
     height:400px;
-    margin:20px 10px 10px 5px;
+    margin:120px 10px 10px 5px;
     float:right;
 }
 
 #blogright{
     width:60%;
-    height:700px;
-    margin:20px 10px 10px 5px;
+    height:100%;
+    margin:120px 10px 10px 5px;
     float:right;
 }
 #blogrightlong{
     width:60%;
-    height:1800px;
-    margin:20px 10px 10px 5px;
+    height:100%;
+    margin:120px 10px 10px 5px;
     float:right;
 }
 
 #left{
     width:25%;
     height:400px;
-    margin:20px 5px 10px 10px;
+    margin:120px 5px 10px 10px;
     float:left;
 }
 
