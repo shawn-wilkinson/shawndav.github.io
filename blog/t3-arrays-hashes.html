@@ -22,18 +22,18 @@
           <h1>Organizing Information in Ruby</h1>
           <h3>An Introduction to Arrays and Hashes</h3>
           <p>April 26, 2015</p>
-          <p>Arrays and Hashes are unique because they can actually <em>contain</em> other objects. They are useful for saving and organizing informaiton, and prove essential to programming in Ruby. Today I'm going give a very introductory overview of arrays, hashes and examples of how they can be used.</p>
+          <p>Arrays and Hashes are unique because they can actually <em>contain</em> other objects. They are useful for saving and organizing information, and prove essential to programming in Ruby. Today I'm going give a very introductory overview of arrays, hashes and examples of how they can be used.</p>
           <p><strong>Arrays:</strong> Arrays can contain a group of objects in an ordered list. Each object in the arrays has a number, which makes arrays useful for maintaining order. For example, an array would be useful for keeping both a shopping list (where order doesn't matter) and names of people waiting for a table at a busy restaurant (where order matters). </p>
           <p><code> shopping_list = ["eggs","milk","coffee","ice cream","dog food"]</code></p>
           <p><code>waiting_list = ["Smith","Wilson","Cooper"]</code>
-          <p>We can play with this a bit more. Instead of text, let's put an array inside of the our array <code>waiting_list</code>. For each of the families listed, we're going to include their last name, the number of people in their party and also a true / false to indicate if it's a special occasion.</p>
+          <p>We can play with this a bit more. Instead of text, let's put an array inside of our array <code>waiting_list</code>. For each of the families listed, we're going to include their last name, the number of people in their party and also a true / false to indicate if it's a special occasion.</p>
           <p><code> waiting_list = [ <br>
           ["Smith", 4, true], <br>
           ["Wilson", 2, false], <br>
           ["Cooper", 10, true]<br>
             ] </code></p>
           <p>As you can see within the main array, there are three different arrays. The Smith family is the first array. We can see that they have a party of four and they are celebrating something tonight. Arrays can get much more complex than this, but this gives you an idea as to useful and flexible they can be.</p>
-          <p><strong>Hashes:</strong> Hashes are simmilar to Arrays in that they also contain other objects. While arrays contain an ordered list of individual objects, Hashes contain multiple pairs of "keys" and "values". The keys can help provide context for the information in value. For example, let's say you wanted to store information on all of your friend's favorite things. We could create a hash called <code>courtneys_favorites</code> and inside have "keys" (favorite color, favorite food, favorite movie) that correspond to "values" (blue, burritos, Reno 911). </p>
+          <p><strong>Hashes:</strong> Hashes are similar to Arrays in that they also contain other objects. While arrays contain an ordered list of individual objects, Hashes contain multiple pairs of "keys" and "values". The keys can help provide context for the information in value. For example, let's say you wanted to store information on all of your friend's favorite things. We could create a hash called <code>courtneys_favorites</code> and inside have "keys" (favorite color, favorite food, favorite movie) that correspond to "values" (blue, burritos, Reno 911). </p>
           <p><code>courtneys_favorites = { <br>
           "favorite color" => "blue", <br>
           "favorite food" => "burritos",<br>
