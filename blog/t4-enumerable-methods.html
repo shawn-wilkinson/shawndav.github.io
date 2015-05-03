@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shawn Wilkinson</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+      <body>
+        <div id="top">
+          <a class="navbutton" href ="http://shawndav.github.io/index">HOME</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">ABOUT ME</a>
+          <a class="navbutton" href ="http://shawndav.github.io/blog/index">BLOG</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">PROJECTS</a>
+          <a class="navbutton" href ="mailto:shawnwilkinson11@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="textbox" id="left">
+          <img id="mypic" src="../shawn.jpg">
+        </div>
+
+        <div class="textbox" id="blogright">
+          <h1>The Map Method</h1>
+          <h3>Quick and Easy Data Transformation</h3>
+          <p>May 3, 2015</p>
+          <p>I'm impressed with the amount of useful tools and shortcuts that are built into  Ruby. Enumerable methods, which allow you to modify or sort large amounts of data, are some of the most powerful. For this blog post, I'm going to discuss what I consider to be the most useful enumerable method, the map method.</p>
+          <p>The map method allows you to transform large sets of data in a way of your choosing. For example, if you have an old array full of numbers, and you'd like to create a new array, where all the values are one greater than in the old array, you can do that with a map method.</p>
+          <p><code>old_array = [1, 2, 3, 4] <br>
+          new_array = old_array.map{|x| x + 1}<br>
+          => [2, 3, 4, 5]</code></p>
+          <p>Each element in new_array is one greater than the corresponding element in old_array. The map method can also be used on strings. Let's say we have an array of names. The names are inconsistently capitalized and we want to standardize it so only the first letter of each name is capitalized. We can do this by using the map method and the string capitalize method. </p>
+          <p><code>name_array = ['AmY','NORa','anthony','BRAD','CaRsOn'] <br>
+          name_array.map {|name| name.capitalize} <br>
+          => ["Amy", "Nora", "Anthony", "Brad", "Carson"]</code></p>
+          <p>So we've seen that the map method can be used to transform both integers and strings that are stored in arrays. Follow along with me and let's try something a little more complicated. Here's the scenario: we're traveling to Thailand for vacation and we need to know the price of hotels. We're comparing five different hotels. Their names and prices are stored in the hash hotel_prices_thb below. The only problem is that these prices are all in Thai Baht (THB). As we're not familiar with this currency, let's use the map method to convert all the prices to US Dollars.</p>
+          <p><code>hotel_prices_thb = {<br>
+          'Hilton' => 3000,<br>
+          'Banyan Tree' => 3500,<br>
+          'Intercontinental' => 4500,<br>
+          'Four Seasons' => 4700,<br>
+          'St. Regis' => 5000<br>
+          }
+          usd_prices = hotel_prices_thb.map{|k,v| v / 33} <br>
+          => [96, 112, 145, 151, 161] </code></p>
+          <p>If you look above, we're using the same map method to convert the values of each pair in the array. We're taking the value and dividing it by 33 to convert from Thai Baht to US Dollars. This leaves us with an array of numbers. Each number represents the price in US Dollars of each hotel as it appears in the initial hash. This is just a basic transformation of a small handful of data. As you can imagine, for very large sets of data, this tool could be very handy!</p>
+
+
+
+
+
+        </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
