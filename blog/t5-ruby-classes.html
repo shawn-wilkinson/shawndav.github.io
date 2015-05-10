@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shawn Wilkinson</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+      <body>
+        <div id="top">
+          <a class="navbutton" href ="http://shawndav.github.io/index">HOME</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">ABOUT ME</a>
+          <a class="navbutton" href ="http://shawndav.github.io/blog/index">BLOG</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">PROJECTS</a>
+          <a class="navbutton" href ="mailto:shawnwilkinson11@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="textbox" id="left">
+          <img id="mypic" src="../shawn.jpg">
+        </div>
+
+        <div class="textbox" id="blogrightlong">
+          <h1>Introduction to Ruby Classes</h1>
+          <h3>Creating Classes and Objects</h3>
+          <p>May 10, 2015</p>
+          <p>Classes allow you to create a basic template for a set of similar objects. For example, every time you create a new object of the "Car class" it would be able to do methods like "honk", "drive_forward" and "rev_engine". It would also have instance variables like @make, @model and @color. These are things all cars have in common (they may have different makes, but they all at least have). Every time you create a new Car object, it will "come with" these characteristics from the moment of initialization. If you're going to be creating a lot of "cars", this will save you a good deal of time and promote consistency among instances of the Car class.</p>
+          <p> I'd like to play around with our Car class example, and introduce you to my car, "Suby" the green Subaru Outback...</p>
+          <p><code>class Car<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;def initialize(make,model,color,mpg)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@make = make<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@model = model<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@color = color<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@mpg = mpg<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;end<br>
+          end<br><br>
+          Suby = Car.new('Subaru','Outback','green',27)</code></p>
+          <p>In the above code I first creating the Car class. I then go on to define the initialization method (used to create new instances of the Car class). The initialization method requires four parameters: make, model, color and MPG. Below this, after I've closed the class, you can see that I'm creating a new instance of the Car class called Suby. For the initialization parameters, I pass use the values of 'Subaru', 'Outback', 'green' and 27. We can create a second car just as easily. </p>
+          <p><code> Simon = Car.new('Honda','Civic','blue',34) <br><br>
+            class Car<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;def basic_info<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;puts "This is a #{@color} #{@make} #{@model} that gets #{@mpg} MPG."<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;end<br>
+          end<br><br>
+          Suby.basic_info<br>
+          Simon.basic_info</code></p>
+          <p>You can see above that we added "Simon", a new instance of the Car class. After entering Simon's information, we went on to define a new method for the Car class, basic_info. This method displays a sentence with information about the car. Below this, we then called this basic_info method on both Suby and Simon. This results in the below output.</p>
+          <p><code>This is a green Subaru Outback that gets 27 MPG.<br>
+          This is a blue Honda Civic that gets 34 MPG.</code></p>
+          <p>You can see that both Suby and Simon have their own values for @make, @model, @color and @mpg. This is because these are instance variables. Each <em>instance</em> of the Car class (Suby and Simon are each an <em>instance</em>) has their own value for each instance variables. Instance variables are easy to spot because they have an '@' in front of the variable name.</p>
+          <p>This is a very basic example of how to use classes in Ruby, but I hope it was helpful. There is a lot more to discuss, so hopefully I'll be able to address it in a future blog post.</p>
+
+        </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
