@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shawn Wilkinson</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+      <body>
+        <div id="top">
+          <a class="navbutton" href ="http://shawndav.github.io/index">HOME</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">ABOUT ME</a>
+          <a class="navbutton" href ="http://shawndav.github.io/blog/index">BLOG</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">PROJECTS</a>
+          <a class="navbutton" href ="mailto:shawnwilkinson11@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="textbox" id="left">
+          <img id="mypic" src="../shawn.jpg">
+        </div>
+
+        <div class="textbox" id="blogright">
+          <h1>Variable Scope</h1>
+          <h3>Understanding Different Types of Ruby Variables</h3>
+          <p>May 17, 2015</p>
+          <p>Programs can have a seemingly endless number of variables. How do you know, when you declare a variable called "number" that you aren't overwriting another variable by the same name somewhere else in the program? Variables would need increasingly obscure names to keep this from happening, which would in-turn make using these variables extremely confusing. Thankfully, there are different types of variables in Ruby, which helps to keep things in order. Each type of variable has a different scope, which limits where they are accessible in the program.</p>
+          <p><strong>Local Variables:</strong> Local variables are accessible only within the method or loop that they are created. For this reason they are said to have a "local scope". Local variables must either begin with a lower case letter or an underscore: example_variable _example_variable.</p>
+          <p><strong>Instance Variables:</strong> Instance variables are unique to each instance of a class. For example, each instance of the employee class may have the variable @hourly_wage, but they each have their own unique value for it. Instance variables are only accessible through the object with which they are associated. Instance variables are easy to spot because they start with an "@": @variable_example, @student_gpa.</p>
+          <p><strong>Class Variables:</strong> Class variables are common to all instances of a class. If one object of a class changes the value of a class variable, the value changes for all instance of that class. Class variables can be identified because they have two "@"s in front of them: @@temperature, @@class_variable.</p>
+          <p><strong>Global Variables:</strong> Global variables can be accessed from anywhere within a program. This means that the value can not only be accessed and read, but it can also be changed from anywhere. This has its uses, but should be used with the understanding that it would be possible for the variable to mistakenly be changed from somewhere else in the program. Global variables can be identified by the dollar sign in front of their name: $global $revenue. </p>
+          <p><strong>Constants:</strong> If declared within a class or module, the scope of that constants will be limited to that class or module. If declared outside of a class or module, constants will have a global scope. As they are "constants", once they are given a value, it should not be changed. The value <em>can</em> be changed, but you will get a warning message before it is changed. Constants are easy to spot because they are in all-caps: CONSTANT, EXAMPLE.</p>
+        </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
