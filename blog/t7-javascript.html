@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shawn Wilkinson</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+      <body>
+        <div id="top">
+          <a class="navbutton" href ="http://shawndav.github.io/index">HOME</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">ABOUT ME</a>
+          <a class="navbutton" href ="http://shawndav.github.io/blog/index">BLOG</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">PROJECTS</a>
+          <a class="navbutton" href ="mailto:shawnwilkinson11@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="textbox" id="left">
+          <img id="mypic" src="../shawn.jpg">
+        </div>
+
+        <div class="textbox" id="blogright">
+          <h1>Ruby and JavaScript</h1>
+          <h3>Differences in If...Else Statements</h3>
+          <p>May 24, 2015</p>
+          <p>Until just recently, my studies at Dev Bootcamp have focused on Ruby, a popular object-oriented programming language. This past week, we've been introduced to JavaScript. Although Ruby and JavaScript are alike in many ways, they also have some major differences. In this blog post, I'd like to explore some of these differences by comparing how Ruby and JavaScript address if...else statements. </p>
+          <p>Below you will see two if...else statements. They are identical except one is written in JavaScript and the other is in Ruby. Both are written to compare a user's score with an existing high score to determine if a new record has been set.</p>
+          <p><strong>Ruby:</strong><br><code>
+          user_score = 20<br>
+          high_score = 10<br>
+
+          if user_score > high_score<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;puts "Amazing! You set a new high score!"<br>
+          elsif user_score == high_score<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;puts "Great job! You tied the high score!"<br>
+          else<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;puts "Good job!"<br>
+          end<br></code></p>
+
+
+          <p><strong>JavaScript:</strong><br><code>
+          var userScore = 20<br>
+          var highScore = 10<br>
+          if (userScore > highScore) {console.log("Amazing! You set a new high score!")}<br>
+          else if(userScore === highScore){console.log("Great job! You tied the high score!")}<br>
+          else{console.log("Good job!")};</code></p>
+          <p>As you can see above, both Ruby and JavaScript utilize a similar structure. They both use <code>if</code> and <code>else</code>, while Ruby uses <code>elsif</code> and JavaScript uses <code>else if</code>. Beyond this, there are a number of differences.</p>
+          <p>This first difference can be seen in the statement that is being evaluated. In ruby <code>if user_score > high_score</code> is used, while in JavaScript <code>If(userScore > highScore)</code> is used. JavaScript requires parenthesis to be used to contain the evaluated statement. After the statement is evaluated, the code block is also formatted differently in each of the two languages. In Ruby, the code between the line with the if and the line with the elsif will run in the event the if statement's condition is true. This code must be on a new line. In JavaScript this code does not need to be on a new line, but must be written inside curly brackets. To finish an if...else statement in Ruby an <code>end</code> is required, while in JavaScript only a semicolon is used.</p>
+
+        </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
