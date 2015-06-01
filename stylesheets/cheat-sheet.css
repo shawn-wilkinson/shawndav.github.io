@@ -1,7 +1,7 @@
 body{
     font-family:Tahoma, Geneva, sans-serif;
-    background-color: #FFE5C3;
-    color:#FFE5C3;
+    background-color: #FFFFFF;
+    color:#D7DADB;
 }
 
 header{
@@ -10,7 +10,7 @@ text-align:center;
 height:90px;
 position:relative;
 margin-top:10px;
-color:#225378;
+color:#2C3E50;
 
 }
 
@@ -20,8 +20,8 @@ nav {
     float: left;
     position: fixed;
     margin-top:20px;
-    background-color:#ACF0F2;
-    box-shadow: 10px 10px 5px #888888;
+    background-color:#2C3E50;
+    box-shadow: 5px 5px 5px #6DBCDB;
 
 
 }
@@ -29,12 +29,30 @@ nav {
 
 nav ul li {
     list-style-type: none;
-
-a{
-    color:#225378;
+    color:#D7DADB;
+}
+p>a{
+    color:#2C3E50;
+    text-decoration:none;
 }
 
+p>a:visited{
+    color:#2C3E50;
+    text-decoration:none;
 }
+
+li > a{
+    color:#D7DADB;
+    text-decoration:none;
+}
+
+li > a:visited{
+    color:#D7DADB;
+    text-decoration:none;
+
+}
+
+
 #content {
     float: left;
     position: absolute;
@@ -44,15 +62,15 @@ a{
 }
 
 article{
-    background-color:#ACF0F2;
+    background-color:#2C3E50;
     padding-bottom:10px;
-    color:#225378;
-    box-shadow: 10px 10px 5px #888888;
+    color:#D7DADB;
+    box-shadow: 5px 5px 5px #6DBCDB;
 }
 
 h2{
-    background-color:#EB7F00;
-    color:#FFE5C3;
+    background-color:#FC4349;
+    color:#2C3E50;
 }
 
 /*

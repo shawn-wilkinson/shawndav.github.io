@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shawn Wilkinson</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+      <body>
+        <div id="top">
+          <a class="navbutton" href ="http://shawndav.github.io/index">HOME</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">ABOUT ME</a>
+          <a class="navbutton" href ="http://shawndav.github.io/blog/index">BLOG</a>
+          <a class="navbutton"href ="http://shawndav.github.io/construction">PROJECTS</a>
+          <a class="navbutton" href ="mailto:shawnwilkinson11@gmail.com">CONTACT ME</a>
+        </div>
+
+        <div class="textbox" id="left">
+          <img id="mypic" src="../shawn.jpg">
+        </div>
+
+        <div class="textbox" id="blogright">
+          <h1>Recursion</h1>
+          <h3>Finding Factorials Through Recursive Methods</h3>
+          <p>May 31, 2015</p>
+          <p>Recursion is when a function or method calls itself. Through recursion, a problem is solved by solving a series of smaller, similar problems. To demonstrate, let's solve the same problem twice: once without recursion and once with recursion.</p>
+          <p>For our example, we're going to create a method that finds the factorial of an integer. The factorial of an integer is the product of that integer and every whole number less than it. In other words, the factorial of 5 (written as 5!) = 5 x 4 x 3 x 2 x 1 = 120 and 3! = 3 x 2 x 1 = 6. The factorial of any number less than or equal to 1 and greater than or equal to 0 is 1. You cannot take the factorial of a negative number.</p>
+          <p><strong>Without Recursion:</strong>
+          <br><code>def factorial(num)<br>
+          &nbsp;&nbsp;product = 1<br>
+          &nbsp;&nbsp;if num < 0<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 'You cannot take the factorial of a negative number.'<br>
+          &nbsp;&nbsp;elsif num <= 1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 1<br>
+          &nbsp;&nbsp;else<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;while num > 0<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product = product * num<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = num - 1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;end<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return product<br>
+          &nbsp;&nbsp;end<br>
+          end<br></code></p>
+          <p><strong>With Recursion:</strong>
+          <br><code>def recursive_factorial(num)<br>
+          &nbsp;&nbsp;if num < 0<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 'You cannot take the factorial of a negative number.'<br>
+          &nbsp;&nbsp;elsif num <= 1<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;return 1<br>
+          &nbsp;&nbsp;else<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;num * recursive_factorial(num - 1)<br>
+          &nbsp;&nbsp;end<br>
+          end<br></code></p>
+          <p>Both of these methods return the exact same value. They just go about it in different ways. Without recursion, with the factorial method, we multiply numbers by a retained product value, starting at the value 'num' and decreasing by 1 until we reach 0. With recursion, when we call recurisve_factorial(num) we multiply 'num' time the value of recursive_factorial(num-1). This method basically calls itself multiple times until num = 1 and the base value of 1 is returned. This basically amounts to 5! = (5 x(4 x(3 x(2 x(1))))).</p>
+          <p>Recursion is certainly not appropriate for every problem, but is useful in certain situations. In this case, recursion provides a more elegant, concise method to find the factorial of a number.</p>
+
+        </div>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
