@@ -12,9 +12,15 @@ a{
     text-underline:none;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     font-family: 'Gudea', sans-serif;
-    background-color:#8CB202;
+    background-color:#9EFFD4;
+    /* Old:#8CB202*/
     padding-top:0px;
 }
 
@@ -26,9 +32,6 @@ header{
     background-color:#008C74;
     padding:30px;
     margin-bottom:0px;
-    margin-top:-10px;
-    margin-left:-10px;
-    margin-right:-10px;
     box-shadow: 2px 3px 2px #004C66;
 }
 
@@ -50,7 +53,7 @@ header{
     text-align:center;
     padding-top:15px;
     font-family: 'Gudea', sans-serif;
-    margin: 0px 7px 0px 7px;
+    margin: 0px 10px 0px 10px;
     float:left;
 }
 
